@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928429831821",
+    "project_id": "flexshow-5c47c",
+    "storage_bucket": "flexshow-5c47c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928429831821:android:ba15d899293479415d54c4",
+        "android_client_info": {
+          "package_name": "com.example.flexshow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp9QqC58sRKFDMZbps6WbS9bCav6hoV0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
