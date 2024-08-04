@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flexshow/widgets/banner-widget.dart';
+import 'package:flexshow/widgets/category-widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -56,12 +57,24 @@ class MainScreen extends StatelessWidget {
                 onTap: () {},
                 buttonText: "See More >",
               ),
+
+              CategoriesWidget(),
+
                HeadingWidget(
                 headingTitle: "Flash Sale",
                 headinhSubTitle: "According to your budget",
                 onTap: () {},
                 buttonText: "See More >",
               ),
+
+
+
+              //  HeadingWidget(
+              //   headingTitle: "Flash Sale",
+              //   headinhSubTitle: "According to your budget",
+              //   onTap: () {},
+              //   buttonText: "See More >",
+              // ),
             ],
           ),
         ),
