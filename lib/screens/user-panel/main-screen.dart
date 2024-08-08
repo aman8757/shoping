@@ -1,13 +1,16 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:flexshow/widgets/banner-widget.dart';
-import 'package:flexshow/widgets/category-widget.dart';
+import 'package:flexshow/screens/user-panel/all-flash-sale-products.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../utils/app-constant.dart';
+import '../../widgets/banner-widget.dart';
+import '../../widgets/category-widget.dart';
 import '../../widgets/custom-drawer-widget.dart';
+import '../../widgets/flash-sale-widget.dart';
 import '../../widgets/heading-widget.dart';
+import 'all-categories-screen.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -54,7 +57,7 @@ class MainScreen extends StatelessWidget {
               HeadingWidget(
                 headingTitle: "Categories",
                 headinhSubTitle: "According to your budget",
-                onTap: () {},
+                onTap: () => Get.to(()=> AllCategoriesScreen()),
                 buttonText: "See More >",
               ),
 
@@ -63,11 +66,12 @@ class MainScreen extends StatelessWidget {
                HeadingWidget(
                 headingTitle: "Flash Sale",
                 headinhSubTitle: "According to your budget",
-                onTap: () {},
+               
+                  onTap: () => Get.to(()=> AllFlashSaleProductScreen()),
+                
                 buttonText: "See More >",
               ),
-
-
+              FlashSaleWidget(),
 
               //  HeadingWidget(
               //   headingTitle: "Flash Sale",

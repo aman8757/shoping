@@ -17,25 +17,20 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
 
-final SignUpController signUpController =Get.put(SignUpController());                                                                                                                                                                    
+final SignUpController signUpController = Get.put(SignUpController());
 TextEditingController username = TextEditingController();
 TextEditingController userEmail = TextEditingController();
 TextEditingController userPhone = TextEditingController();
 TextEditingController userCity = TextEditingController();
 TextEditingController userPassword = TextEditingController();
-  @override
-  Widget build(BuildContext context) {
-    return KeyboardVisibilityBuilder(
-      builder: (context, isKeyboardVisible) {
-        return Scaffold(
-          appBar: AppBar(
-            title: const Text(
-              "Sign Up",
-              style: TextStyle(color: AppConstant.appTextColor),
-            ),
-            backgroundColor: AppConstant.appSecondaryColor,
-            centerTitle: true,
-          ),
+@override 
+Widget build(BuildContext context) {
+  return KeyboardVisibilityBuilder(builder: (context, iskeyBoardVisible) {
+    return Scaffold(appBar: AppBar(
+      title: Text("SignUp",style: TextStyle(color: AppConstant.appTextColor),),
+      backgroundColor: AppConstant.appSecondaryColor,
+      centerTitle: true,
+    ),
 
           body: Container(
             child: SingleChildScrollView(
